@@ -33,7 +33,7 @@ public class ExtractEmailData implements ApplicationListener<ContextRefreshedEve
 
                 Session session = Session.getDefaultInstance(new Properties());
                 Store store = session.getStore("imaps");
-                store.connect("imap.googlemail.com", 993, "paramintrigue@gmail.com", "Ammaamma8@");
+                store.connect("imap.googlemail.com", 993, "****", "***");
                 Folder folder = store.getFolder("INBOX");
                 //folder.open( Folder.READ_ONLY );
                 folder.open(Folder.READ_WRITE);
